@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Manager</title>
+    <link rel="icon" href="img/LOGO.ico" type="image/icon type">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="img/video2.mp4" type="video/mp4">
+    </video>
+    <div class="dark-shade"></div>
+    <div class="fixed-menu">
+        <div class="logo-image">
+            <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+        </div>
+
+        <div>
+            <ul class="menu-list floating">
+                <a href="aboutus.html">
+                    <li>ABOUT US</li>
+                </a>
+                <a href="menu.php">
+                    <li>MENU</li>
+                </a>
+
+                <a href="gallery.html">
+                    <li>GALLERY</li>
+                </a>
+                <a href="contactus.html">
+                    <li>CONTACT US</li>
+                </a>
+                <a type="button" class="login-Btn" onclick="showDivSignup()">Book Appointment</a>
+            </ul>
+        </div>
+    </div>
+    <div class="slogan">
+        <div style="margin-top: 120px;">
+            <p style="width: 400px;">Event Extravaganza</p>
+            <p style="font-size: 25px; font-weight: 200;">Your Dream Events, Our Expertise.</p>
+            <a href="#"></a>
+            <div class="btn-more" onclick="showDivSignup()">
+                <h6>Get Call</h6>
+            </div></a>
+
+            <div class="signup-container" id="signup-container" style="display:none;">
+                <div class="clossDiv" onclick="closeDiv()">
+                    <img src="img/close.png" alt="cross" width="30px" id="closeBtn">
+                </div>
+                <h2>Book Appointment</h2>
+                <form action="booking_process.php" method="POST" class="bookForm">
+                    <!-- Customer Details -->
+                    <fieldset>
+                        <legend>Customer Details</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </fieldset>
+
+                    <!-- Event Details -->
+                    <fieldset>
+                        <legend>Event Details</legend>
+                        <label for="event_type">Event Type:</label>
+                        <select id="event_type" name="event_type" required>
+                            <option value="" disabled selected>Select an event type</option>
+                            <option value="Wedding">Wedding</option>
+                            <option value="Birthday">Birthday</option>
+                            <option value="Corporate">Corporate</option>
+                            <option value="Other">Other</option>
+                        </select>
+
+                        <label for="event_date">Event Date:</label>
+                        <input type="date" id="event_date" name="event_date" required>
+
+                        <label for="event_time">Event Time:</label>
+                        <input type="time" id="event_time" name="event_time" required>
+
+                        <label for="guest_count">Number of Guests:</label>
+                        <input type="number" id="guest_count" name="guest_count"
+                            placeholder="Enter the number of guests" required>
+
+                        <label for="event_location">Event Location:</label>
+                        <textarea id="event_location" name="event_location" placeholder="Enter the venue address"
+                            rows="3" required></textarea>
+                    </fieldset>
+
+                    <!-- Additional Details -->
+                    <fieldset>
+                        <legend>Additional Details</legend>
+                        <label for="special_requests">Special Requests:</label>
+                        <textarea id="special_requests" name="special_requests"
+                            placeholder="Add any specific requests or preferences" rows="3"></textarea>
+
+                        <label for="package_selected">Package:</label>
+                        <select id="package_selected" name="package_selected">
+                            <option value="" disabled selected>Select a package</option>
+                            <option value="Basic">Basic</option>
+                            <option value="Standard">Standard</option>
+                            <option value="Premium">Premium</option>
+                        </select>
+
+                        <label for="budget">Budget:</label>
+                        <input type="number" id="budget" name="budget" placeholder="Enter your budget (optional)">
+                    </fieldset>
+
+                    <button type="submit">Book Appointment</button>
+                </form>
+
+            </div>
+        </div>
+        <div class="rightImage">
+            <img src="/img/wedding_planner_2.png" alt="side" width="550px">
+        </div>
+    </div>
+
+    <div class="second">
+        <!-- Reviews Section -->
+        <div id="reviews" class="review-section">
+            <h2 style="text-align: center; color: white; margin-top: 40px;">Happy Customers</h2>
+            <div class="review-container">
+                <div class="review">
+                    <img src="/img/mAN.jpg" alt="Customer 1">
+                    <p>"Absolutely amazing event! Highly recommend."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="review">
+                    <img src="/img/gIRL2.jpg" alt="Customer 2">
+                    <p>"They made my wedding a dream come true!"</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="review">
+                    <img src="/img/GIRL1.JPG" alt="Customer 3">
+                    <p>"Professional, creative, and reliable service!"</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Section -->
+        <div id="gallery" class="gallery-section">
+            <h2 style="text-align: center; color: white; margin-top:40px;">Recent Events</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="/img/Bday.jpg" alt="Event 1">
+                    <p>Birthday</p>
+                </div>
+                <div class="gallery-item"><img src="/img/New year.jpg" alt="Event 2">
+                    <p>New Year</p>
+                </div>
+                <div class="gallery-item"><img src="/img/wedding.jpg" alt="Event 3">
+                    <p>Wedding</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
