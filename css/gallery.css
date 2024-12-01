@@ -1,0 +1,58 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #b3a69e00;
+
+}
+
+.gallery-item {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border: 5px solid #fff;
+}
+
+
+* {
+  font-family: 'Calibri';
+}
+
+h1 {
+  color: white;
+}
+
+.gallery {
+  scale: 0.9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgba(240, 248, 255, 0);
+}
+
+.gallery-item {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+
+}
+
+#myVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  /* Send it behind the content */
+  object-fit: cover;
+  /* Ensures the video covers the background */
+}

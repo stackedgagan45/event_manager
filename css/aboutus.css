@@ -1,0 +1,79 @@
+/* Reset some default styles and set a background color */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Style the header with a background image and centered text */
+header {
+    background-image: url('your-header-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+h1 {
+    color: black;
+    font-size: 2.5em;
+}
+
+/* Style the main content area */
+main {
+    padding: 20px;
+}
+
+/* Style individual sections */
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 0;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Style the team member profiles */
+.team-member {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.team-member img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Hover effect for links */
+a {
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}

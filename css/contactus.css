@@ -1,0 +1,79 @@
+/* Reset some default styles and set a background color */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    /* background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fheader&psig=AOvVaw0jfQMziiRwCRuissuA7x33&ust=1697626180762000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMiV5L30_IEDFQAAAAAdAAAAABAE'); */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+h1 {
+    color: black;
+    font-size: 2.5em;
+}
+
+/* Main content area styles */
+main {
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 0;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Team member profile styles */
+.team-member {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.team-member img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Link hover effect */
+a {
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
